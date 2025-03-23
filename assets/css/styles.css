@@ -411,7 +411,9 @@ svg {
   background-color: var(--container-color);
 }
 .projects__container{
-  row-gap:2rem;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap:1.5rem;
   justify-content: center;
   padding-block: 1rem;
 }
@@ -419,6 +421,8 @@ svg {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
+  width: calc(33.33% - 1rem); 
+  /* max-width: 280px;   */
 }
 .projects__img{
   width: 100%;
